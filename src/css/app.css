@@ -1,0 +1,7 @@
+.app__message {
+  text-align: center;
+}
+
+.app__error {
+  color: red;
+}

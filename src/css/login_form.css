@@ -1,0 +1,21 @@
+.login-form {
+  width: 400px;
+  border: 1px solid grey;
+  padding: 20px 30px;
+  margin: 1rem auto;
+}
+
+input.login-form__field {
+  display: block;
+  font-size: 1.1rem;
+  width: 100%;
+  padding: .3rem;
+  margin-bottom: .75rem;
+}
+
+.login-form__action {
+  background: cornflowerblue;
+  color: white;
+  font-size: 1.1rem;
+  padding: .5rem;
+}
