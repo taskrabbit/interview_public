@@ -1,0 +1,5 @@
+<%= form_tag "/url_shortener/convert", method: "post" do %>
+  <%= label_tag(:url, "Enter a url:") %>
+  <%= text_field_tag(:url) %>
+  <%= submit_tag("Convert") %>
+<% end %>
