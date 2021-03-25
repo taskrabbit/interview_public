@@ -4,7 +4,10 @@ For this coding exercise, you'll be designing a URL shortener, similar to [Bitly
 
 ## Setup
 
-We recommend you be setup on Ruby `2.5.5` to run this repo.
+We recommend you install Ruby `2.5.5` to run this repo.
+
+You may also need to install some external dependencies:
+  - `mimemagic`, part of rails, requires the shared-mime-info library; [instructions here](https://github.com/mimemagicrb/mimemagic/blob/master/README.md)
 
 ### Confirm Your Setup
 
