@@ -51,7 +51,7 @@ If you do not enter valid credentials there are two failure cases
 
 ![validation_error](https://cl.ly/tQlk/Screen%20Shot%202018-08-02%20at%2010.59.45%20AM.png)
 
-2.  A connection error from the login service. In the event of a connection error, there is a 'Try Again' option to retry the request.
+2.  A connection error from the login service. In the event of a connection error, there is a 'Try Again' link that should reset the state, bringing the user back to an empty login form.
 
 ![connection_error](https://cl.ly/tSFe/Screen%20Shot%202018-08-02%20at%2011.00.25%20AM.png)
 
