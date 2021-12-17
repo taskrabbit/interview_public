@@ -1,4 +1,43 @@
-## React State Management
+# TaskRabbit React Coding Exercise
+
+For this coding exercise, we will be building a login flow application in React. The components are already built, the goal here is to manage how the app transitions between different states.
+
+--
+
+## Setup
+
+Ensure you have `Node.js` and `npm` ( or `yarn` ) installed before your interview. Confirm that the following commands can output their versions without error on your machine:
+
+```bash
+node -v
+npm -v # or yarn -v
+```
+
+Clone the repository and cd into the `login_form` folder:
+
+```
+cd login_form
+```
+
+Next, install the project dependencies:
+
+```bash
+npm install # or yarn install
+```
+
+Then start the server:
+
+```bash
+npm run start # or yarn start
+```
+
+Open http://localhost:3000 with your browser to see the result. The page will reload as you make changes.
+
+You can start editing the page by modifying `src/App.js`.
+
+--
+
+## Instructions
 
 We will be building a login flow application. The components are already built, the goal here is to manage how the app transitions between different states.
 
@@ -12,7 +51,7 @@ If you do not enter valid credentials there are two failure cases
 
 ![validation_error](https://cl.ly/tQlk/Screen%20Shot%202018-08-02%20at%2010.59.45%20AM.png)
 
-2.  A connection error from the login service. In the event of a connection error, there is a 'Try Again' option to retry the request.
+2.  A connection error from the login service. In the event of a connection error, there is a 'Try Again' link that should reset the state, bringing the user back to an empty login form.
 
 ![connection_error](https://cl.ly/tSFe/Screen%20Shot%202018-08-02%20at%2011.00.25%20AM.png)
 
@@ -23,22 +62,3 @@ If the credentials are accepted, there is a logged in 'Profile' view. The logged
 During any network request, there should be a loading screen.
 
 ![loading_screen](https://cl.ly/tSj2/Screen%20Shot%202018-08-02%20at%2011.05.48%20AM.png)
-
----
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
