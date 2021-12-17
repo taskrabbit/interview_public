@@ -18,7 +18,7 @@ class LoginForm extends Component {
 
   render() {
     return (
-      <form className="login-form">
+      <form className="login-form" autocomplete="off">
         <input
           type="text"
           ref={this.username}
