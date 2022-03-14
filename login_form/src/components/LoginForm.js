@@ -4,15 +4,13 @@ import "../css/login_form.css";
 class LoginForm extends Component {
   constructor(props) {
     super(props);
-    this.username = React.createRef();
-    this.password = React.createRef();
   }
 
   _submit(event) {
     event.preventDefault();
     this.props.submit({
-      username: this.username.current.value,
-      password: this.password.current.value
+      username: this.props.username,
+      password: this.props.password,
     });
   }
 
@@ -20,14 +18,16 @@ class LoginForm extends Component {
     return (
       <form className="login-form" autocomplete="off">
         <input
+          onChange={this.props.setUsername}
+          value={this.props.username}
           type="text"
-          ref={this.username}
           placeholder="Username"
           className="login-form__field"
         />
         <input
+          onChange={this.props.setPassword}
+          value={this.props.password}
           type="password"
-          ref={this.password}
           placeholder="Password"
           className="login-form__field"
         />
