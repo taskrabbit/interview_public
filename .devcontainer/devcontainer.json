@@ -14,15 +14,18 @@
   },
 
   // Add the IDs of extensions you want installed when the container is created.
-  "extensions": ["ms-vsliveshare.vsliveshare"],
+  "extensions": [
+    "ms-vsliveshare.vsliveshare",
+    "VisualStudioExptTeam.vscodeintellicode"
+  ],
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   "forwardPorts": [3000],
 
   // Use 'postCreateCommand' to run commands after the container is created.
-  "onCreateCommand": "cd login_form && yarn install",
+  "onCreateCommand": "cd login_form && yarn install"
 
-  "postCreateCommand": "cd login_form && yarn start"
+  // "postCreateCommand": "cd login_form && yarn start"
 
   // Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
   // "remoteUser": "node"
