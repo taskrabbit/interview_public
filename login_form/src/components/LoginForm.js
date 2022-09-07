@@ -12,13 +12,13 @@ class LoginForm extends Component {
     event.preventDefault();
     this.props.submit({
       username: this.username.current.value,
-      password: this.password.current.value
+      password: this.password.current.value,
     });
   }
 
   render() {
     return (
-      <form className="login-form" autocomplete="off">
+      <form className="login-form" autoComplete="off">
         <input
           type="text"
           ref={this.username}
@@ -32,7 +32,7 @@ class LoginForm extends Component {
           className="login-form__field"
         />
         <button
-          onClick={event => this._submit(event)}
+          onClick={(event) => this._submit(event)}
           className="login-form__action"
         >
           Submit
