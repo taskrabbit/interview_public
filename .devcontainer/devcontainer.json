@@ -23,7 +23,7 @@
   "forwardPorts": [3000],
 
   // Use 'postCreateCommand' to run commands after the container is created.
-  "onCreateCommand": "cd login_form && yarn install"
+  "onCreateCommand": "cd login_form && yarn install && cd ../rails_challenge && rvm install 2.5.5 && rvm use 2.5.5"
 
   // "postCreateCommand": "cd login_form && yarn start"
 
