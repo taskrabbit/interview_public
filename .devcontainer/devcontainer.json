@@ -4,11 +4,11 @@
 	"name": "Ruby on Rails",
 	"build": {
 		// "dockerfile": "Dockerfile",
-		"args": { 
-			// Update 'VARIANT' to pick a Ruby version: 2, 2.7, 2.6, 2.5
-			"VARIANT": "2.5",
+		"args": {
+			"VARIANT": "2.7",
 			"NODE_VERSION": "14"
-		}
+		},
+		"dockerfile": "Dockerfile"
 	},
 
   // Set *default* container specific settings.json values on container create.
@@ -18,12 +18,16 @@
 
   // Add the IDs of extensions you want installed when the container is created.
   "extensions": [
-    "ms-vsliveshare.vsliveshare",
-    "VisualStudioExptTeam.vscodeintellicode"
-  ],
+	"ms-vsliveshare.vsliveshare",
+	"VisualStudioExptTeam.vscodeintellicode",
+	"rebornix.Ruby"
+],
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
-  "forwardPorts": [3000],
+"forwardPorts": [
+	3000
+],
+"remoteUser": "vscode",
 
   // Use 'postCreateCommand' to run commands after the container is created.
   // "onCreateCommand": "cd login_form && yarn install && cd ../rails_challenge && rvm install 2.5.5 && rvm use 2.5.5"
