@@ -108,6 +108,8 @@ GEM
       racc (~> 1.4)
     nokogiri (1.15.4-arm64-darwin)
       racc (~> 1.4)
+    puma (6.4.0)
+      nio4r (~> 2.0)
     racc (1.7.1)
     rack (2.2.8)
     rack-test (2.1.0)
@@ -204,6 +206,7 @@ DEPENDENCIES
   byebug
   factory_bot_rails (~> 6.0.0)
   jbuilder (~> 2.0)
+  puma
   rails (~> 6.1.0)
   rspec (~> 3.12.0)
   rspec-rails (~> 6.0.0)
